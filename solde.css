@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.balance-box {
+    background-color: white;
+    border: px solid #e1e1e1; /* Bordure générale */
+    border-radius: 22px; /* Arrondi pour un aspect moderne */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    position: relative; /* Nécessaire pour positionner le demi-cercle */
+    overflow: hidden; /* Pour cacher la partie débordante du demi-cercle */
+}
+
+.half-circle {
+    position: absolute;
+    top: -20px; /* Positionne le demi-cercle à l'intérieur de la carte */
+    left: -60px; /* Ajuste la position pour l'intérieur */
+    width: 120px; /* Largeur totale du demi-cercle */
+    height: 210px; /* Hauteur du demi-cercle */
+    border-radius: 60px 60px  0; /* Crée le demi-cercle */
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Dégradé de couleurs */
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0px 0 10px; /* Marge pour éloigner du demi-cercle */
+}
+
+.balance-amount {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4caf50; /* Couleur verte pour le solde */
+    margin: 0;
+}
+
+.balance-note {
+    font-size: 14px;
+    color: #757575; /* Couleur grise pour la note */
+}
